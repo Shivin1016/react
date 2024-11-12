@@ -50,3 +50,7 @@ CONCEPTS->
     -->write a function and inside component pass it 
      example-> <component function = {function}>
     -->if we send children expilicitly as well as inside tags then inside tag will be overlap over the expilicit children
+
+7->State Lifiting in React-> props data Transfer from parent to child ,now the need is ,that how we can transfer data from child to parent 
+    we know that->   parent -----> child
+            how can do it->  child -----> parent 
