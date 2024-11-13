@@ -1,0 +1,23 @@
+
+.btn-container{
+    position: absolute;
+    height: 20vh;
+    width: 40vw;
+    border: 5px solid black; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: rgb(230, 158, 64);
+}
+
+#btn{ 
+    position: relative;
+    background-color: rgb(65, 184, 240);
+    width: 10rem;
+    height: 50px;
+    font-size: 2rem;
+    font-weight: bold;
+    cursor: pointer;
+}

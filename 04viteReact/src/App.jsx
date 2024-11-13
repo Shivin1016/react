@@ -9,7 +9,7 @@ function App() {
     setCount(count + 1);
   }
   return (
-    <div> 
+    <div className = "container"> 
       <Button handleClick = {handleClick} text = 'Click me'>
         <h1>{count}</h1>
       </Button>

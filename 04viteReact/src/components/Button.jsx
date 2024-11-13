@@ -1,10 +1,13 @@
 import React from "react";
+import "./Button.css"
 
 const Button = (props) => {
   return (
-    <div>
-       {props.children}
-      <button onClick={props.handleClick}>{props.text}</button>
+    <div className="btn-container">
+      <p>{props.children}</p>
+      <button id="btn" onClick={props.handleClick}>
+        {props.text}
+      </button>
     </div>
   );
 };
