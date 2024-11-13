@@ -54,3 +54,8 @@ CONCEPTS->
 7->State Lifiting in React-> props data Transfer from parent to child ,now the need is ,that how we can transfer data from child to parent ,a technique that allows multiple components to share and update the same state
     we know that->   parent -----> child
             how can do it->  child -----> parent 
+
+8-> Rule of JSX->
+                1-> You can return only one html tag element from App.jsx file
+                2-> If you are worry about that which tag we should use ,then use fragment taht -> empty opening and      closing tag-> <> </>
+                
