@@ -58,4 +58,16 @@ CONCEPTS->
 8-> Rule of JSX->
                 1-> You can return only one html tag element from App.jsx file
                 2-> If you are worry about that which tag we should use ,then use fragment taht -> empty opening and      closing tag-> <> </>
-                
+
+9->Conditional Rendering-> Your components will often need to display different things depending on different conditions. In React, you can conditionally render JSX using JavaScript syntax like if statements, &&, and ? : operators
+       -->using four ways we can do conditonal rendering in react app
+       1->using if - else
+       2->using ternary operator
+       3->using logical operator
+       4->using early return
+
+10->Event Handling-> 
+
+11->UseEffect Hook-> It is an react Hook by which you can generate side effect hook , so it is like that if there is any event occur then we want to generate a side effect 
+if any event happen then we want to run any side effect logic
+        for example-> when you login on any webpage then you can see your profile picture -> it works like when you login then immediately call goes in DB and your image comes from db  and it renders on your webpage after login
