@@ -65,7 +65,7 @@ function App() {
       {/* <TimerComponent/> */}
       {/* <DataFetcher/> */}
       {/* <ResizeComponent/> */}
-      <MultiEffectComponent/>
+      {/* <MultiEffectComponent/> */}
     </div>
   );
 }

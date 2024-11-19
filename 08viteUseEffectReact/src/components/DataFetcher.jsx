@@ -12,7 +12,7 @@ const DataFetcher = () => {
         setLoading(false);
       });
   }, []);
-  //it will only on first render
+  //it will run only on first render
 
   return (
     <div>
