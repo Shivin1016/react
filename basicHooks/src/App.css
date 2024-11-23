@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Arrows:wght@400..700&family=Spline+Sans+Mono:ital,wght@0,300..700;1,300..700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container{
+  width: 100vw;
+  height: 100vh;
+  display: flex; 
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  background-color: rgba(8, 4, 23, 0.944);
+  color: white; 
+}
+button{
+  font-size: 0.8rem;
+  padding: 0.3rem;
+  background-color: rgba(27, 27, 28, 0.944);
+  color : #fff;
+  border: none;
+  
+  font-family: "Edu AU VIC WA NT Arrows", cursive;
+}
