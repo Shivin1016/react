@@ -1,12 +1,15 @@
-React is Library of Javascript which helping in build a UI compnents for Web and Mobile applications
-    By using React Development process is fast and code is so optimzied performance wise
-    By using react -> web page is intect during dynamically changes on web page
-    React is component based / modular
-    React is Virtual DOM ->light weight copy of actual DOM
-    Create single page application with Dynamic updation 
-    React can maintane state , and manage data using props
-    we can use hooks which have more features
-    Using react ->if we create component and use it on so many places and if we add changes then it reflect at all places of that component -> it is vey powerful feature of react.
+React is Library of Javascript which helping in build Dynamic  and UI compnents for Web and Mobile applications
+    1->Developed at facebook in 2011 
+    And it is most widely used js library fro front-end development
+    2->It is Used to create single page Application
+    3->By using React Development process is fast and code is so optimzied performance wise
+    4->By using react -> web page is intect during dynamically changes on web page
+    5->React is component based / modular
+    6->React is Virtual DOM ->light weight copy of actual DOM
+    7->Create single page application with Dynamic updation 
+    8->React can maintane state , and manage data using props
+    9->we can use hooks which have more features
+    10->Using react ->if we create component and use it on so many places and if we add changes then it reflect at all places of that component -> it is vey powerful feature of react.
     To make component ->name.jsx
 
 
