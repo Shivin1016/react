@@ -38,6 +38,9 @@ CONCEPTS->
     -->In React we can Assume that Component as a function
     -->For example->if we want to make any section on webpage then you can create by creating a function that returns you some HTMl type code
 
+    1.1->Dynamic Components ->
+        Using {} , we can embed any js ecpressions in directly in jsx .this include vaiables , function and many more
+
 2->Props->In JSX file we send props(Which is defined by coder as a variable) which can be used  inside component like username ,userId etc...
     -->Simply ,we can say that to pass data inside component for that we use props
 
