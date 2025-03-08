@@ -1,9 +1,9 @@
-React is Library of Javascript which helping in build Dynamic  and UI compnents for Web and Mobile applications
+React is Library of Javascript which helping in build Dynamic and UI compnents for Web and Mobile applications
     1->Developed at facebook in 2011 
-    And it is most widely used js library fro front-end development
+    And it is most widely used js library for front - end development
     2->It is Used to create single page Application
-    3->By using React Development process is fast and code is so optimzied performance wise
-    4->By using react -> web page is intect during dynamically changes on web page
+    3->By using React Development process is so fast and code is so optimzied performance wise
+    4->By using react -> web page is intrect during dynamically changes on web page
     5->React is component based / modular
     6->React is Virtual DOM ->light weight copy of actual DOM
     7->Create single page application with Dynamic updation 
@@ -14,12 +14,12 @@ React is Library of Javascript which helping in build Dynamic  and UI compnents 
 
 
 jsx->it is that type of code in which we can Use html in js
-for websites we use react-dom and for Mobile applications react -native 
-              ______>React-dom
+for websites we use react-dom and for Mobile applications react-native 
+              __ __ __>React-dom(websites)
              |
     react-----
              |
-             |______>React-native
+             |__ __ __>React-native(mobile applicaitions)
 Basic Way to make react App using npx(node package excuter) and npm(node package manager) by using command -> npx create-react-app 01basicReact
 But nowdays basic way is not used ,we use vite 
 make react app using vite-> it is an Bundle based dev server
@@ -34,19 +34,21 @@ Extra info --> To know ,in the current directory ->use commad-> pwd
 
 CONCEPTS->
 1-> Components-> It is just a function that gives you some HTML type of code
-    -->it have function and class based components ,nowdays function based components are  used widely
+    -->it have function and class based components ,nowdays function based components are used widely
     -->In React we can Assume that Component as a function
     -->For example->if we want to make any section on webpage then you can create by creating a function that returns you some HTMl type code
 
     1.1->Dynamic Components ->
-        Using {} , we can embed any js ecpressions in directly in jsx .this include vaiables , function and many more
+        Using {} , we can embed any js ecpressions directly in jsx this include vaiables , function and many more
 
-2->Props->In JSX file we send props(Which is defined by coder as a variable) which can be used  inside component like username ,userId etc...
+2->Props->In JSX file we send props(Which is defined by coder as a variable) which can be used  inside component like username , userId etc...
     -->Simply ,we can say that to pass data inside component for that we use props
+    -->Pass data from parent to child component
+    -->They are immutable
 
 3->JSX->(Js xml)Inside Component ,we return Code which is HTML like ,inside this code we use javaScript also 
 
-4->Hook--> It is just an utility ,Using Hooks in react, used to just hooks on to the      Features(Functionality) provided by the react
+4->Hook--> It is just an utility ,Using Hooks in react, used to just hooks on to the Features(Functionality) provided by the react
      -->In starting of the react ,Inside function based component we did not used hook but inside class based component we can used ,but withtime upgradation in react provide this functionality for function based component also
     -->Functionalities
         1->UseStateHook-> By usibg useStatehook ,you can manage the state of the component
@@ -67,12 +69,14 @@ CONCEPTS->
                 1-> You can return only one html tag element from App.jsx file
                 2-> If you are worry about that which tag we should use ,then use fragment tag -> empty opening and closing tag-> <> </>
 
-9->Conditional Rendering-> Your components will often need to display different things depending on different conditions. In React, you can conditionally render JSX using JavaScript syntax like if statements, &&, and ? : operators
+9->Conditional Rendering-> Displaying content on certain conditions , Allows for dynamic user interfaces
+    Your components will often need to display different things depending on different conditions. In React, you can conditionally render JSX using JavaScript syntax like if statements, &&, and ? : operators
        -->using four ways we can do conditonal rendering in react app
        1->using if - else
        2->using ternary operator
        3->using logical operator
        4->using early return
+    JSX ignores null / empty values
 
 10->Event Handling-> 
 
@@ -99,3 +103,20 @@ if any event happen then we want to run any side effect logic
         3->Consume --> pass the value and consume the value
     Parent Provide the context and Those childs wants to consume the data is called conetxt - consumer
      
+13-> Fragments-> when we return more that one elements then we have to wrapped it inside an extra div tag, so it also adds in DOM tree , hence from over this we use React.Fragment tag instead of extra div tag
+    It allows Grouping of ,multiple elements without extra DOM nodes
+    Return Multiple elements without a wrapping parent
+    Syntex->
+        13.1-> <React.Fragment> ...</React.Fragment>
+        13.2-> SHORT HAND SYNTEX-> <>..</>
+
+14->Map Method-> Render lists From Array Data. Transform arra items into JSX ,Directly inside JSX
+    for example -> we have array of items[]
+        {items.map((item) => <li key={item.id}>{item.name} </li>)}
+    key-prop->Assign Unique Key for optimized re-render
+    <div key= {item.id}>{item.name}</div>
+
+15->CSS Modules-> Localized class names to avoid global Conflicts   
+    Styles are scoped to individual components
+    Helps in creating components-specific styles
+    Automatically generates unique class names
