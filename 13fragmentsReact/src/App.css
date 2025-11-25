@@ -1,4 +1,8 @@
 .food-heading{
     background-color: #8cf0de;
     color: #937fff;
+    display: flex;
+    justify-content: center; 
+    font-weight: bold; 
+    font-size: 2rem;
 }

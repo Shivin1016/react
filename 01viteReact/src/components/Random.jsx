@@ -5,6 +5,7 @@ const Random = () => {
   return (
     <div>
       <h1 style ={{'backgroundColor' : '#776691'}} >Random Number is : {Math.round(rand)}</h1>
+      
     </div>
   )
 }

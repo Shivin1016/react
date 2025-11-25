@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./App.css";
+import InterviewQues from "./components/interviewQues";
 
 function App() {
   const [counter , setCounter] = useState(0);
@@ -29,6 +30,7 @@ function App() {
       <button onClick={addValue}> Add value   </button>
       <button onClick={removeValue} > Remove value </button>
       <footer>counter : {counter}</footer>
+      <InterviewQues/>
     </div>
   );
 }

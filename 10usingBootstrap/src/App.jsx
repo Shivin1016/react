@@ -4,10 +4,10 @@ import viteLogo from "/vite.svg";
 import "./App.css";
 
 function App() {
-  const [count, setCount] = useState(0);
+  // const [count, setCount] = useState(0);
 
   return (
-    <div>
+    <div class='d-flex'>
       <button type="button" class="btn btn-primary">
         Primary
       </button>

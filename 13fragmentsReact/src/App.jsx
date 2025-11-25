@@ -27,7 +27,7 @@ function App() {
       {/* {foodItems.length === 0 && <h3>I am Still Hungry</h3>} */}
       <ErrorMessage items = {foodItems}/>
        <FoodItems items = {foodItems}/> 
-    </>
+    </> 
   );
 }
 

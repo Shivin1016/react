@@ -1,21 +1,27 @@
 import React from "react";
 
-const TodoItem = (props) => {
+const TodoItem = ({ itemName , date }) => { 
   return (
     <div className="container">
-      <div class="row my-row">
-        <div class="col-6">
-            {props.itemName}
+ 
+      <div className="row my-row"> 
+        <div className="col-6">
+            {itemName}
         </div>
-        <div class="col-4">
-            {props.date}
+
+        <div className="col-4">
+            {date}
         </div>
-        <div class="col-2">
-          <button type="button" class="btn btn-danger my-button">
+
+        <div className="col-2">
+          <button type="button" className="btn btn-danger my-button">
             Delete
           </button>
         </div>
+
       </div>
+
+
     </div>
   );
 };
