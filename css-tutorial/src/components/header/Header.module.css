@@ -1,0 +1,19 @@
+.header{
+    background-color: lightgreen;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    margin: 5px;
+}
+.logo{
+    text-decoration: underline;
+}
+.btn{
+    padding: 12px;
+    margin: 5px;
+    border-radius: 6px;
+    outline: none;
+    border: none;
+    font-size: 1.1rem; 
+}

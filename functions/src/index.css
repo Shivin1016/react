@@ -1,0 +1,38 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+html , body{
+  height: 100%;
+  width: 100%;
+}
+button , input{
+  margin: 10px;
+  padding: 6px;
+}
+.box{
+  width: 400px;
+  height: 400px;
+  background-color: rebeccapurple;
+  margin: 10px 20px;
+  text-align: center;
+  font-size: 2rem;
+  color: #fff;
+}
+.page1{
+  height: 100vh;
+  width: 100%;
+  background-color: #cefa0c;
+}
+.page2{
+  height: 100vh;
+  width: 100%;
+  background-color: #a09d9d;
+}
+.page3{
+  height: 100vh;
+  width: 100%;
+  background-color: #752d2d;
+}

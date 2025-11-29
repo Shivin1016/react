@@ -1,21 +1,32 @@
-React is Library of Javascript which helping in build Dynamic and UI compnents for Web and Mobile applications
-        1->Developed at facebook in 2011 
-        And it is most widely used js library for front-end development
-        2->It is Used to create single page Application
-        3->By using React , Development process is so fast and code is so optimzied performance wise
-        4->By using react -> web page is interect during dynamically changes on web page
-        5->React is component based / modular
-        6->React is Virtual DOM ->light weight copy of actual DOM
-        7->Create single page application with Dynamic updation 
-        8->React can maintane state , and manage data using props
-        9->we can use hooks which have more features
-        10->Using react ->if we create component and use it on so many places and if we add changes then it reflect at all places of that component -> it is vey powerful feature of react.
-        To make component ->name.jsx
-        11-> Used to create single page application 
-        12->work with dom becomes complicated with JS ,so Here react is become helpFul for us to modify DOM 
+# React Notes
+## React is Library of Javascript which helping in build Dynamic and UI compnents for Web and Mobile applications
+   <div class='flex center'>
+        <li>1->Developed at facebook(Meta) in 2011
+        And it is most widely used js library for front-end development</li>
+        <li>2->It is Used to create single page Application(SPA)</li>
+        <li>3->By using React , Development process is so fast and code is so optimzied performance wise</li>
+        <li> 4->By using react -> web page is interect during dynamically changes on web page</li>
+        <li>5->React is component based / modular</li>
+        <li>6->React is Virtual DOM ->light weight copy of actual DOM</li>
+        <li>7->Create single page application with Dynamic updation</li>
+        <li>8->React can maintane state , and manage data using props</li>
+        <li>9->we can use hooks which have more features</li>
+        <li> 10->Using react ->if we create component and use it on so many places and if we add changes then it reflect at all places of that component -> it is vey powerful feature of react.
+        To make component ->name.jsx</li>
+        <li>
+        11-> Used to create single page application </li>
+        <li>12->work with dom becomes complicated with JS ,so Here react is become helpFul for us to modify DOM </li>
+   </div>    
 
 
-jsx->(It allow you to write HTMl like code directly into javascript)it is that type of code in which we can Use html in js
+## Difference Between Library and Framework
+library ->It is used to give feature to the particular website , ex-> GSAP(moving animation) , Lenis(smooth scrolling) , ReactJS(TO make UI)
+framwork-> It gives everything in one form Inbuilt and we have to follow the rules of this , we can't make anything beyound this(No customization) ex-->nextjs , angular ,Remix 
+
+## Real DOM -> Tree like structure of HTML page(Problem in real dom that when we click on particular btn than everything reload but we only want change only particular thing that we want)
+## Virtual DOM -> It make a copy of real DOM for example -> we want to change the h1 content on clicking the btn so it only changes the h1 and It compare with the real dom and make changes there  , So using this no Faltu ki reloading
+
+jsx->(It allow you to write HTMl like code directly into javascript)it is that type of code in which we can Use html in js , combination of js and html
 for websites we use react-dom and for Mobile applications react-native 
 
               __ __ __>React-dom(websites)
@@ -34,6 +45,11 @@ SET Up for React App->
     check package.json folder ,
     use comond ->cd <directory_name> then use dir to see folders and if node module folder is not present the use command-> npm i or npm install
     and for runnig react app use commond -> npm run dev
+Project Structure --> eslint.config.js ==> Used for making custom rules for your development
+                     gitignore ==> That file contains files which we don't want to upload on github (.env , nodemodules)
+                     package.json ==> Used for configuration (which file we used)
+                     lock json ==> more details about configuration
+                     readMe ->about folder that shows on gitHub 
 
     -->Interview Question ->
             1->Why vite is more famous for react interview ? -> fastest development serve and build tools
@@ -51,10 +67,15 @@ SET Up for React App->
                 first ->default export function Setting(){}  export default Setting
                 second -> named export --> syntex -> export function Setting(){} 
                 we can export default component only one but named export more than one
-
+            7->Props Drilling 
+                You can send data form parent(App) to child(card) , so when we pass data from parent to child that is called props drilling and it sends in the form of object (to pass string use single code or duble code and for numbers/ objects use curly braces) 
 Extra info --> To know ,in the current directory ->use commad-> pwd
 
 CONCEPTS->
+Before Learn Components lets Understand functions
+-->We make functions inside components before returning statement and the good thing is that when you add that function inside btn button then never call it instant using brackets write as it is the name of function other wise it runnign without clicking on btn 
+-->You can make the function inside the btn also  using arrow or normal
+-->As whenever we have to pass the parameters to the function then we have to make another function then call it inside that with parameters for example you make an input and inside it you make function inputChanging and if you are trying to pass parameter means you call it then it executed itself , so for that you can make an anoynomouse function then isnide that you can call that function
 1-> Components-> It is just a function that gives you some HTML type of code
     -->it have function and class based components ,nowdays function based components are used widely
     -->In React we can Assume that Components are nothing but it act as a function
