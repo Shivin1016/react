@@ -26,7 +26,7 @@ framwork-> It gives everything in one form Inbuilt and we have to follow the rul
 ## Real DOM -> Tree like structure of HTML page(Problem in real dom that when we click on particular btn than everything reload but we only want change only particular thing that we want)
 ## Virtual DOM -> It make a copy of real DOM for example -> we want to change the h1 content on clicking the btn so it only changes the h1 and It compare with the real dom and make changes there  , So using this no Faltu ki reloading
 
-jsx->(It allow you to write HTMl like code directly into javascript)it is that type of code in which we can Use html in js , combination of js and html
+### jsx->(It allow you to write HTMl like code directly into javascript)it is that type of code in which we can Use html in js , combination of js and html
 for websites we use react-dom and for Mobile applications react-native 
 
               __ __ __>React-dom(websites)
@@ -40,7 +40,7 @@ Basic Way to make react App using npx(node package excuter) and npm(node package
 But nowdays basic way is not used ,we use vite(Frontend developer tool)
 make react app using vite-> it is an Bundle based dev server
 
-SET Up for React App->
+## SET Up for React App->
     use command ->npm create vite@latest
     check package.json folder ,
     use comond ->cd <directory_name> then use dir to see folders and if node module folder is not present the use command-> npm i or npm install
@@ -69,6 +69,10 @@ Project Structure --> eslint.config.js ==> Used for making custom rules for your
                 we can export default component only one but named export more than one
             7->Props Drilling 
                 You can send data form parent(App) to child(card) , so when we pass data from parent to child that is called props drilling and it sends in the form of object (to pass string use single code or duble code and for numbers/ objects use curly braces) 
+            8->LocalStorage --> browser storage ->means broswer keeps you data like login , thems and other updates which websites allow to store in localstorage but We don't make here any DB , we just store small data for ease of users. data walways stored in the form of the key-value pair. It stores data even you turned off server ,window or your PC 
+              localStorage methods ->  to set Item use setItem , to get item use getItem , to remove item use removeItem and clear all use clear 
+            9->Session storage --> If you make any changes on website , so till you stays in the websites the data will stay and if you close this website tab then this will be deleted , so it live untill the session runs
+            (The time untill you stay in website)
 Extra info --> To know ,in the current directory ->use commad-> pwd
 
 CONCEPTS->
@@ -91,11 +95,26 @@ Before Learn Components lets Understand functions
 
 3->JSX->(Js xml)Inside Component ,we return Code which is HTML like ,inside this code we use javaScript also 
 
-4->Hook--> It is just an utility ,Using Hooks in react, used to just hooks on to the Features(Functionality) provided by the react
+4->Hooks--> It is just an utility ,Using Hooks in react, used to just hooks on to the Features(Functionality) provided by the react.They are doing specific task alone .
      -->In starting of the react ,Inside function based component we did not used hook but inside class based component we can used ,but withtime upgradation in react provide this functionality for function based component also
     -->Functionalities
-        1->UseStateHook-> By usibg useStatehook ,you can manage the state of the component
-        2->it provide two variables state variable and state function
+        UseState -->1->By using useStatehook ,you can manage the state of the component
+                    2->it provide two variables state variable and state function
+                    3->The changement from one state to another state ,ex-> name ->Shivani --> name ->Prajapati changes state
+                    4->Using useState we make two variable -> one is readOnly and other is writeOnly
+                    5->In useState setVarName is an Asychronous function
+                    6->when you setNum with same value then no re-render on UI , because react think that you didn't update the value
+                    7->Batch Update -> Whenever we write the same update of setNum(num + 1) in multiple times but it only excute or update num only one time not multiple time 
+                    but if we wrote the setNum(prev => (prev + 1)) in multiple times so it update in all the re-write
+        useEffect -->1->It executed side by side process 
+                    2->ex->when you call API and want to take data from it then you can use useEffect --> it didn't break react execution , and this useEffect works side by side 
+                    3->ex->API call , DOM manipulation , event
+        useRef  -->1->It select an particular dom element ex->like we select an dom element in js using document.qs('div') but we can't do this in react , we can't interect directly to the element , we have to go through the react
+                   2-->Tell to the react -> react do it , useRef actually takes reference
+        useContext -->1->Manage global context  --> for ex in prop drilling we pass data from parent to child then child so this is like chain formed , but Using useContext-> we put all data in to globally 
+        useReducer--> 1->handle large / complex data 
+        useMemo and useCallback--> USed for memoization or optimization(solving re-renders) for example ->when in website notification count changes then only update notification corner not full website
+    
 
 5->Props as Children--> if we write any content inside the closing tag and opening tag of the component is considered as children
     
