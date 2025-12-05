@@ -26,6 +26,7 @@ framwork-> It gives everything in one form Inbuilt and we have to follow the rul
 ## Real DOM -> Tree like structure of HTML page(Problem in real dom that when we click on particular btn than everything reload but we only want change only particular thing that we want)
 ## Virtual DOM -> It make a copy of real DOM for example -> we want to change the h1 content on clicking the btn so it only changes the h1 and It compare with the real dom and make changes there  , So using this no Faltu ki reloading
 
+
 ### jsx->(It allow you to write HTMl like code directly into javascript)it is that type of code in which we can Use html in js , combination of js and html
 for websites we use react-dom and for Mobile applications react-native 
 
